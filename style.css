@@ -116,7 +116,7 @@ button{
     align-items: center;
     padding: 70px 60px;
     border-radius: 8px;
-    background-image: url(/img/pizza.png);
+    background-image: url(img/pizza.png);
     background-position-x: 800px;
     background-position-y: -220px;
     background-size: 50%;
@@ -160,6 +160,7 @@ button{
     margin-bottom: 40px;
     border: rgb(230, 230, 230) solid 1px;
     border-radius: 8px;
+    transition: .1s ease-in-out;
 }
 
 .image img{
@@ -271,6 +272,12 @@ button:active{
 .dishSearch::placeholder{
     user-select: none;
     padding-left: 2px;
+}
+
+.card:hover{
+    box-shadow: rgb(185, 185, 185) 0px 1px 3px 0.4px;
+    transform: translateY(-3px);
+    cursor: pointer;
 }
 
 .socials:hover{
