@@ -1,0 +1,185 @@
+@font-face {
+    font-family: 'Yandex-Sans-Text';
+    src: url('YandexSansText-Thin.eot');
+    src: local('Yandex Sans Text Thin'), local('YandexSansText-Thin'),
+        url('YandexSansText-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Yandex-Sans-Text';
+    src: url('YandexSansText-Light.eot');
+    src: local('Yandex Sans Text Light'), local('YandexSansText-Light'),
+        url('YandexSansText-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Yandex-Sans-Text';
+    src: url('YandexSansText-Regular.eot');
+    src: local('Yandex Sans Text Regular'), local('YandexSansText-Regular'),
+        url('YandexSansText-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Yandex-Sans-Text';
+    src: url('YandexSansText-Medium.eot');
+    src: local('Yandex Sans Text Medium'), local('YandexSansText-Medium'),
+        url('YandexSansText-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Yandex-Sans-Text';
+    src: url('YandexSansText-Bold.eot');
+    src: local('Yandex Sans Text Bold'), local('YandexSansText-Bold'),
+        url('YandexSansText-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* ----------  стили  ---------- */
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Yandex-Sans-Text;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(160, 160,160);
+}
+
+.logo{
+    transition: .1s ease-in-out;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.container{
+    width: 1440px;
+    margin: auto;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0px;
+}
+
+.headerBlock{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 190px;
+    justify-content: space-between;
+}
+
+.searchbar{
+    padding: 8px 16px;
+    width: 900px;
+    margin: 0px 90px;
+    border: solid rgb(160, 160, 160) 1.9px;
+    border-radius: 4px;
+    transition: .1s ease-in-out;
+    font-size: 14px;
+}
+
+button{
+    padding: 8px 16px;
+    display: flex;
+    flex-direction: row;
+    border: solid rgb(160, 160, 160) 1.9px;
+    border-radius: 4px;
+    background-color: transparent;
+    user-select: none;
+    transition: .1s ease-in-out;
+    font-size: 14px;
+}
+
+.icon{
+    width: 16px;
+    height: 16px;
+}
+
+.mainCard{
+    background-color: #FFF1B8;
+    align-items: center;
+    padding: 70px 60px;
+    border-radius: 8px;
+    background-image: url(/img/pizza.png);
+    background-position-x: 800px;
+    background-position-y: -220px;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+.mainCard h1{
+    line-height: 30px;
+}
+
+.mainCard p{
+    padding-top: 30px;
+    font-size: 18px;
+}
+
+.restTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px 0px;
+}
+
+.dishSearch{
+    padding: 6px 16px;
+    width: 260px;
+    border: solid rgb(160, 160, 160) 1.9px;
+    border-radius: 4px;
+    transition: .1s ease-in-out;
+    font-size: 14px;
+}
+
+/* ----------  события мыши  ---------- */
+
+.logo:hover{
+    opacity: 70%;
+}
+
+.searchbar::placeholder{
+    user-select: none;
+    padding-left: 2px;
+}
+
+.searchbar:focus{
+    outline: none;
+    box-shadow: rgb(230, 230, 230) 0px 0px 3px 0.5px;
+    border: solid rgb(230, 230, 230) 1.9px;
+}
+
+button:hover{
+    background-color: #1890FF;
+    border: 1.9px solid #1890FF;
+    color: white;
+}
+
+button:focus{
+    outline: none;
+}
+
+button:active{
+    background-color: #146fc4;
+}
+
+.dishSearch:focus{
+    outline: none;
+    box-shadow: rgb(230, 230, 230) 0px 0px 3px 0.5px;
+    border: solid rgb(230, 230, 230) 1.9px;
+}
