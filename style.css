@@ -54,6 +54,7 @@
 a{
     text-decoration: none;
     color: rgb(160, 160,160);
+    transition: .1s ease-in-out;
 }
 
 .logo{
@@ -181,7 +182,7 @@ button{
 .foodInfo{
     display: flex;
     flex-direction: row;
-    width: 200px;
+    width: 220px;
     justify-content: space-between;
     padding-top: 10px;
     color: rgb(56, 56, 56);
@@ -192,9 +193,45 @@ button{
     color: white;
     font-size: 14px;
     padding: 4px 6px;
+    border-radius: 4px;
+}
+
+.rating{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.rating p{
+    margin-left: 6px;
+}
+
+.rating img{
+    margin-bottom: 3px;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 40px;
+    justify-content: space-between;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 400px;
+    margin-right: 600px;
 }
 
 /* ----------  события мыши  ---------- */
+
+a:hover{
+    color: black;
+}
 
 .logo:hover{
     opacity: 70%;
@@ -234,4 +271,8 @@ button:active{
 .dishSearch::placeholder{
     user-select: none;
     padding-left: 2px;
+}
+
+.socials:hover{
+    cursor: pointer;
 }
