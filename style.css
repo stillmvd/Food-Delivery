@@ -147,6 +147,53 @@ button{
     font-size: 14px;
 }
 
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card{
+    box-shadow: rgb(230, 230, 230) 0px 0px 3px 0.5px;
+    margin-bottom: 40px;
+    border: rgb(230, 230, 230) solid 1px;
+    border-radius: 8px;
+}
+
+.image img{
+    width: 460px;
+    height: 300px;
+}
+
+.cardInfo{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+}
+
+.mainName{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.foodInfo{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    justify-content: space-between;
+    padding-top: 10px;
+    color: rgb(56, 56, 56);
+}
+
+.mainName p{
+    background-color: rgb(56, 56, 56);
+    color: white;
+    font-size: 14px;
+    padding: 4px 6px;
+}
+
 /* ----------  события мыши  ---------- */
 
 .logo:hover{
@@ -182,4 +229,9 @@ button:active{
     outline: none;
     box-shadow: rgb(230, 230, 230) 0px 0px 3px 0.5px;
     border: solid rgb(230, 230, 230) 1.9px;
+}
+
+.dishSearch::placeholder{
+    user-select: none;
+    padding-left: 2px;
 }
